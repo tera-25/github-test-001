@@ -1,0 +1,78 @@
+研修用のgithubにアクセスする方法
+
+1.研修用のディレクトリに移動
+
+cd C:/
+cd appli
+cd projects
+
+
+
+リモートリポジトリのコピー（一回きり）
+git clone https://github.com/tera-25/rookies.git	自分のGITHUBのフォーク先
+
+
+cd rookies	:ここまで入って作業する
+
+
+2.ブランチを作って研修（大切）
+git branch　名前は何でもいい
+
+	研修用ブランチ名一覧
+	1. ユーザ情報（詳細）
+	feature/user-detail/block1	作成済み
+	feature/user-detail/block2
+	feature/user-detail/block3
+
+	2. ユーザ登録
+	feature/user-create/block1
+	feature/user-create/block2
+	feature/user-create/block3
+
+	3. ユーザ削除
+	feature/user-delete/block1
+	feature/user-delete/block2
+
+	4. ユーザ更新
+	feature/user-update
+
+	5. ユーザ一覧
+	feature/user-list/block1
+	feature/user-list/block2
+
+
+作成したブランチに移動
+git checkout feature/user-detail/block1
+
+
+
+
+--------ブランチに切り替えた時点で、もうプロジェクトを編集してOK-------
+
+/c/appli/projects/rookies (ブランチ名）→ この状態なら編集開始してOK。
+
+
+	作業終了後----------------------------------------------------
+
+
+
+3.状態確認
+git status
+
+
+4.変更をステージ(高橋さんが言うコミットするための台に乗せる)
+git add .	全部やってもいいと思う
+
+
+コミット
+git commit -m "メッセージ"	なんの作業をしたか書く
+
+
+これが基本ルーティン。
+je
+	------１つのブロックの操作が終わったら-----------
+作業が確定したらプッシュ
+git push
+（初回だけ -u が必要）
+git push -u origin feature/user-detail/block1
+

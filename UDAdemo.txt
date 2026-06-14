@@ -1,0 +1,31 @@
+package jp.co.tis.rookies.action;
+
+import jp.co.tis.rookies.form.UserIdForm;
+import nablarch.common.web.interceptor.InjectForm;
+import nablarch.core.message.ApplicationException;
+import nablarch.fw.ExecutionContext;
+import nablarch.fw.web.HttpRequest;
+import nablarch.fw.web.HttpResponse;
+import nablarch.fw.web.interceptor.OnError;
+
+/**
+ * ユーザー詳細画面の表示を行うアクションクラス.
+ * ユーザーIDを受け取り、ユーザー詳細画面へ遷移する.
+ * @author tera
+ */
+public class UserDetailAction {
+
+    /**
+     * ユーザー詳細画面を表示する.
+     * ユーザーIDフォームを受け取り、詳細画面へ遷移する.
+     *
+     * @param req HTTPリクエスト
+     * @param ctx 実行コンテキスト
+     * @return ユーザー詳細画面のレスポンス
+     */
+    @OnError(type = ApplicationException.class, path = "/WEB-INF/view/user/errorPages/USER_ERROR.jsp")
+    @InjectForm(form = UserIdForm.class)
+    public HttpResponse headerProfile(HttpRequest req, ExecutionContext ctx) {
+        return new HttpResponse("/WEB-INF/view/user/detail.jsp");
+    }
+}

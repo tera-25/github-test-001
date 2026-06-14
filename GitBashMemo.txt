@@ -2,28 +2,32 @@
 
 1.研修用のディレクトリに移動
 
+	自宅PC
 cd F:/
 cd .apple
 
 
+	社用
+cd C:/
+cd appli
+cd projects
 
-リモートリポジトリのコピー（データもってくる）
+
+
+
+	リモートリポジトリのコピー（データもってくる）
 git clone https://github.com/tera-25/rookies.git	自分のGITHUBのフォーク先
-
-
 
 git clone https://github.com/tera-25/github-test-001.git	；データ送信用
 
 
-cd rookies	:ここまで入って作業する
-
+cd rookies			:ここまで入って作業する
 cd github-test-001		：データ送信用
 
 
 
 
-GitHub の最新ブランチ情報を全部取得（重要）
-コード
+	GitHub の最新ブランチ情報を全部取得（重要）
 git fetch --all
 
 
@@ -85,6 +89,7 @@ je
 	------１つのブロックの操作が終わったら-----------
 作業が確定したらプッシュ
 git push
+
 （初回だけ -u が必要）
 git push -u origin feature/user-detail/block1
 

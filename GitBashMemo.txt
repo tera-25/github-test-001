@@ -41,24 +41,18 @@ git branch　名前は何でもいい
 	研修用ブランチ名一覧
 	1. ユーザ情報（詳細）
 	feature/user-detail/block1	作成済み
-	feature/user-detail/block2
-	feature/user-detail/block3
 
 	2. ユーザ登録
-	feature/user-create/block1
-	feature/user-create/block2
-	feature/user-create/block3
+	feature/user-create
 
 	3. ユーザ削除
-	feature/user-delete/block1
-	feature/user-delete/block2
+	feature/user-delete
 
 	4. ユーザ更新
 	feature/user-update
 
 	5. ユーザ一覧
-	feature/user-list/block1
-	feature/user-list/block2
+	feature/user-list
 
 
 作成したブランチに移動
@@ -81,7 +75,7 @@ git status
 
 
 4.変更をステージ(高橋さんが言うコミットするための台に乗せる)
-git add .	全部やってもいいと思う
+	全部やってもいいと思う
 
 
 コミット
@@ -95,4 +89,28 @@ git push
 
 （初回だけ -u が必要）
 git push -u origin feature/user-detail/block1
+
+
+
+
+コミット一覧を参照
+git log --graph --oneline
+
+コミットのぱすが取得できる
+例：ｘｘｘｘ
+
+
+その他
+
+コミット ｘｘｘｘ に移動	git checkout ｘｘｘｘ
+
+今の変更を退避してから移動	git stash 
+				git checkout ｘｘｘｘ
+
+いまの変更を破棄して移動	git restore .
+				git checkout ｘｘｘｘ
+
+今の変更をコミットしてから移動	git add .
+				git commit -m "WIP: 作業途中"
+				git checkout 
 

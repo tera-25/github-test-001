@@ -14,7 +14,7 @@ cd projects
 
 
 
-cd . .	ひとつもどる
+cd ..	ひとつもどる
 
 
 
@@ -113,4 +113,13 @@ git log --graph --oneline
 今の変更をコミットしてから移動	git add .
 				git commit -m "WIP: 作業途中"
 				git checkout 
+
+
+
+
+
+
+今のコミットを特定のブランチに push
+
+git push origin HEAD:
 

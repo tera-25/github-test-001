@@ -14,6 +14,10 @@ cd projects
 
 
 
+cd . .	ひとつもどる
+
+
+
 
 	リモートリポジトリのコピー（データもってくる）
 git clone https://github.com/tera-25/rookies.git	自分のGITHUBのフォーク先
@@ -85,7 +89,6 @@ git commit -m "メッセージ"	なんの作業をしたか書く
 
 
 これが基本ルーティン。
-je
 	------１つのブロックの操作が終わったら-----------
 作業が確定したらプッシュ
 git push

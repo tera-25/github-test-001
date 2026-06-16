@@ -34,16 +34,23 @@ cd github-test-001		：データ送信用
 	GitHub の最新ブランチ情報を全部取得（重要）
 git fetch --all
 
+	GitHubの最新の状態をいまのプロジェクトに反映反映
+git reset --hard origin/feature/user-detail/block1
+
+
+https://github.com/tera-25/rookies.git
+
+
 
 2.ブランチを作って研修（大切）
 git branch　名前は何でもいい
 
 	研修用ブランチ名一覧
 	1. ユーザ情報（詳細）
-	feature/user-detail/block1	作成済み
+	feature/user-detail	作成済み
 
 	2. ユーザ登録
-	feature/user-create
+	feature/user-create	作成済み
 
 	3. ユーザ削除
 	feature/user-delete
@@ -52,11 +59,11 @@ git branch　名前は何でもいい
 	feature/user-update
 
 	5. ユーザ一覧
-	feature/user-list
+	feature/user-list	
 
 
 作成したブランチに移動
-git checkout feature/user-detail/block1
+git checkout xxx
 
 
 
@@ -75,7 +82,7 @@ git status
 
 
 4.変更をステージ(高橋さんが言うコミットするための台に乗せる)
-	全部やってもいいと思う
+git add .		全部やってもいいと思う
 
 
 コミット

@@ -130,3 +130,13 @@ git log --graph --oneline
 
 git push origin HEAD:
 
+
+
+
+ローカル main を最新に合わせる（上書き）
+ローカルで変更がないならこれが最短：
+
+コード
+git checkout main
+git pull origin main
+

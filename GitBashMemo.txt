@@ -35,8 +35,7 @@ cd github-test-001		：データ送信用
 git fetch --all
 
 	GitHubの最新の状態をいまのプロジェクトに反映反映
-git reset --hard origin/feature/user-detail/block1
-
+git reset --hard origin/ブランチ名
 
 https://github.com/tera-25/rookies.git
 
@@ -95,7 +94,7 @@ git commit -m "メッセージ"	なんの作業をしたか書く
 git push
 
 （初回だけ -u が必要）
-git push -u origin feature/user-detail/block1
+git push -u origin ブランチ名
 
 
 

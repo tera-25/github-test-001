@@ -53,13 +53,13 @@ git branch　名前は何でもいい
 	feature/user-create	作成済み
 
 	3. ユーザ削除
-	feature/user-delete
+	feature/user-delete	作成済み
 
 	4. ユーザ更新
-	feature/user-update
+	feature/user-update	作成済み
 
 	5. ユーザ一覧
-	feature/user-list	
+	feature/user-list	作成済み
 
 
 作成したブランチに移動
